@@ -1,13 +1,13 @@
 import { Search, Bell, Menu } from "lucide-react";
 import { DropdownMenu, Button, Avatar } from "@radix-ui/themes";
 
-function NavBar() {
+function NavBar({searchBar}) {
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 z-50 flex h-16 items-center justify-between bg-primary px-4 border-b border-borderColor">
-        <div className="font-bold text-2xl">Doubtly</div>
+        {searchBar ? <div className="font-bold text-2xl">Doubtly</div> : <div className="font-bold text-2xl"> Back</div>}
 
-        <div className="flex-1 flex items-center justify-center max-w-2xl">
+        {searchBar && <div className="flex-1 flex items-center justify-center max-w-2xl">
           <div className="w-full flex items-center space-x-2">
             <div className="relative w-full">
               <Search className="absolute left-3 top-2.5 h-4 w-4" />
@@ -17,7 +17,7 @@ function NavBar() {
               />
             </div>
           </div>
-        </div>
+        </div>}
 
         <div className="flex items-center gap-6">
           <button className="h-full w-full">

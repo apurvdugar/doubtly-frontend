@@ -39,7 +39,7 @@ function LatestDoubts() {
             <Select.Content>
               <Select.Item value="all">All Doubts</Select.Item>
               <Select.Item value="unanswered">Unanswered</Select.Item>
-              <Select.Item value="most-upvoted" disabled>Most Upvoted</Select.Item>
+              <Select.Item value="most-upvoted">Most Upvoted</Select.Item>
               {/* <Select.Separator /> */}
             </Select.Content>
           </Select.Root>

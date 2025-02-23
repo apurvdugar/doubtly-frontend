@@ -7,12 +7,13 @@ import Stats from "./components/dashboard/Stats";
 import DashLeaderBoard from "./components/dashboard/LeaderBoard";
 import TrendingDoubts from "./components/dashboard/TrendingDoubts";
 import LatestDoubts from "./components/dashboard/LatestDoubts";
+import Landing from "./components/Landing/Landing"
 
 function App() {
 
   return (
     <>
-      <NavBar />
+      <NavBar searchBar={true}/>
       <SideBar />
       <main className="pt-16 pl-72 pr-8 bg-primary">
         <div className="container py-6 space-y-8 ">
@@ -21,19 +22,19 @@ function App() {
           <Stats />
 
           <div className="flex justify-between">
-            {/* left */}
             <div className="w-[70%]">
               <TrendingDoubts />
               <LatestDoubts />
             </div>
 
-            {/* right */}
             <div className="w-[27.5%]">
               <DashLeaderBoard />
             </div>
           </div>
         </div>
       </main>
+
+        {/* <Landing /> */}
     </>
   );
 }
