@@ -4,7 +4,7 @@ import { Button } from "@radix-ui/themes";
 function Landing() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen gap-2">
+      <div className="flex flex-col items-center justify-center min-h-screen gap-2 bg-primary">
         <h2 className="text-4xl font-extrabold">Welcome to Doubtly</h2>
         <span className="text-md font-normal text-textSecondary">
           A community-driven platform to share and resolve your doubts

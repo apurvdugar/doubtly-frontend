@@ -8,12 +8,14 @@ import DashLeaderBoard from "./components/dashboard/LeaderBoard";
 import TrendingDoubts from "./components/dashboard/TrendingDoubts";
 import LatestDoubts from "./components/dashboard/LatestDoubts";
 import Landing from "./components/Landing/Landing"
+import Signup from "./components/LogIn-SignUp/Signup";
+import Login from "./components/LogIn-SignUp/Login";
 
 function App() {
 
   return (
     <>
-      <NavBar searchBar={true}/>
+      {/* <NavBar searchBar={true}/>
       <SideBar />
       <main className="pt-16 pl-72 pr-8 bg-primary">
         <div className="container py-6 space-y-8 ">
@@ -32,9 +34,11 @@ function App() {
             </div>
           </div>
         </div>
-      </main>
+      </main> */}
 
         {/* <Landing /> */}
+        {/* <Signup/> */}
+        {/* <Login /> */}
     </>
   );
 }
